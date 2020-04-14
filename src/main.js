@@ -1,2 +1,7 @@
-import $ from 'jquery'
-console.log('1111')
+import Vue from 'vue';
+import App from './App.vue';
+
+new Vue({
+  render: h => h(App),
+  router,
+}).$mount('#app');
