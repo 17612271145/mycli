@@ -10,7 +10,7 @@ module.exports = {
     filename: config.output.filename || '[name].bundle.js',
     path: basePath(config.output.path || 'dist')
   },
-  // module:{
-  //   rules:config.rules?[...baseLoader,...config.rules]:[...baseLoader],  
-  // }
+  module:{
+    rules:config.rules?[...baseLoader,...config.rules]:[...baseLoader],  
+  }
 }
